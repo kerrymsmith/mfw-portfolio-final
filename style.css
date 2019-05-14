@@ -45,9 +45,13 @@ nav.navbar{
 /* HOME */
 .container-fluid{
     background-image: url('../img/hero.jpg');
+    width: 100%;
+    min-height: 600px;
 }
-.home>h1{
+#home>h1{
     font-family: 'Source Code Pro', monospace;
     font-size: 3em;
     color: rgba(29, 105, 171, 0.2);
 }
+
+/* MY WORK */
