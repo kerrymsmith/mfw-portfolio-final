@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Source+Code+Pro');
+
+Global
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+/* NAVBAR */
+.nav li a:hover{
+    background-color: transparent;
+}
+.navbar{
+    background-color: transparent;
+    border-color: transparent;
+    position: fixed;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    color: #fff;
+    background-color: rgba(29, 105, 171, 0.2);
+}
+.navbar-default .navbar-nav>li>a{
+    color: #FFEFDE;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus{
+    color: #1d69ab;
+    background-color: rgba(29, 105, 171, 0.2);
+}
+nav.navbar{
+    position: absolute;
+    top: 100;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+.brand{
+    color: #FFEFDE;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    margin-left: 20px;
+    text-shadow: 2px 2px 5px #0a0a0a;
+}
+  
+/* DROPDOWN
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+} */
+
+/* HOME */
+.home{
+    background-image: url('../img/hero.jpg');
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+}
+#home>h1, p{
+    font-family: 'Source Code Pro', monospace;
+    color: #FFEFDE;
+    text-shadow: 2px 2px 5px #0a0a0a;
+}
+#home>h1{
+    font-size: 3em;
+    margin-top: 250px;
+}
+
+/* MY WORK */
+#mywork div{
+    min-height: 600px;  
+}
+
+#mywork a{
+    color: #ffff00;
+    font-size: 3em;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+.bgr-img{
+    background-size: cover;
+    background-attachment: fixed;
+}
+.one{
+    background-image: url('../img/website-1.png');
+}
+.two{
+    background-image: url('../img/website-2.png');
+}
+.three{
+    background-image: url('../img/website-3.png');
+}
+
+/* CONTACT */
+#contact{
+    background-color: #00A575;
+    font-family: 'Source Code Pro', monospace;
+}
+.requiredStar::after{
+    content:'*';
+    color: #ff0000;
+}
+#contact_fine_print{
+    font-size: 12px !important;
+}
