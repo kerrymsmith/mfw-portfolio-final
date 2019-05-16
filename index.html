@@ -7,7 +7,8 @@
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16 32x32"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- NAVBAR -->
@@ -20,14 +21,26 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo">
+                <a href="#" class="brand">Kerry Smith
                 </a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="mainNav">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#home">Home</a><span class="sr-only">(current)</span></li>
-					<li><a href="#mywork">My Work</a></li>
+					<li><a href="#home">Home</a><span class="sr-only">(current)</span></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <!-- <div class="navbar">
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()"><li><a href="#mywork">My Work</a></li>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                            <a href="#tri">Triangles</a>
+                            <a href="#pet">Pet STore</a>
+                            <a href="#rest">Restaurante</a>
+                            </div>
+                        </div> 
+                    </div> -->
 					<li><a href="#contact">Contact Me</a></li>
 				</ul>
 			</div>
@@ -35,30 +48,115 @@
     </nav>
 
     <!-- HOME -->
-    <div class="container-fluid">
+    <div class="home container-fluid">
         <div id="home">
             <h1 class="text-center">
                 kerry smith
             </h1>
+            <p class="text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, architecto!
+            </p>
         </div>
     </div>
     
     <!-- MY WORK -->
     <div id="mywork" class="container-fluid">
         <div class="row text-center">
-            <div class="col-sm-8 center">
-                <h1></h1>
-                <p>
-                    <a href="https://kerrymsmith.github.io/wfb-final/" target="_blank">First Ever Website: Triangles</a>
-                </p>
+            <div class="center">
+                <div id="tri" class="bgr-img one">
+                    <a href="https://kerrymsmith.github.io/wfb-final/" target="_blank">First Ever Website: Triangles
+                </a>
+                </div>
+                <div id="pet" class="bgr-img two">
+                    <a href="https://kerrymsmith.github.io/mfw-pet-store/" target="_blank">Pet Store Website
+                </a>
+                </div>
+                <div id="rest" class="bgr-img three">
+                    <a href="https://kerrymsmith.github.io/mfw-restaurante/" target="_blank">Restaurante Website
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container-fluid">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="uppercase">Contact Me</h2>
+                    </div>
+                </div>
+                <div class="row contact_bottom">
+                    <div class="col-sm-6">
+                        <div class="col-sm-12 contact_form">
+                            <form action=""></form>
+                            <div class="form-group">
+                                <label for="Name">Name:
+                                    <span class="requiredStar"></span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="E-mail">E-mail:
+                                    <span class="requiredStar"></span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="Message">Message:
+                                    <span class="requiredStar"></span>
+                                    <textarea cols="52" rows="7" class="form-control" placeholder="Message"></textarea>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="I'm not a robot.">
+                                    <input type="checkbox">I'm a robot.
+                                </label>
+                                <span class="requiredStar"></span>
+                            </div>
+                            <button type="submit" class="btn btn-default center-block">Send Message</button>
+                            <p class="text-center" id="contact_fine_print"><span class="requiredStar"></span>All fields marked are mandatory.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <address>
+                            <strong class="text-uppercase">My "Office"</strong>
+                            <br>
+                            1234 N. 5th St.
+                            <br>
+                            Visalia, CA
+                            <br>
+                            Phone: (123) 456-7890
+                        </address>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102873.17767060723!2d-119.40171760406035!3d36.317476570779135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094d882d3eb8729%3A0x5592e3ee010b480e!2sVisalia%2C+CA!5e0!3m2!1sen!2sus!4v1557964523646!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-
     <!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+    </script> -->
 </body>
 </html>
